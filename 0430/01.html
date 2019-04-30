@@ -7,23 +7,18 @@
     <title>Document</title>
     <style>
         .box {
+            width: 100px;
             border: 1px solid #000;
-        }
-        .box img {
-            display: block;
-        }
-        .box2 {
-            height: 200px;
-            width: 200px;
-            border: 1px solid #000;
+            overflow: hidden;
+            /* 强制文字不换行 */
+            white-space: nowrap;
+             /*超出文本就是点点的形式显示  */
+            text-overflow: ellipsis;
+            
         }
     </style>
 </head>
 <body>
-    <!-- 图片下面留白的问题 -->
-    <div class="box">
-        <img src="images/2.jpg" alt="">
-    </div>
-    <div class="box2"></div>
+    <div class="box">我就看卡你是不是多长U盾噢长</div>
 </body>
 </html>
