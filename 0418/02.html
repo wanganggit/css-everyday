@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function hexToString(str){
+            var val="";
+            // var arr = [];
+            // arr.push(str);
+            var arr = str.split(",");
+            for(var i = 0; i < arr.length; i++){
+                // val += arr[i].fromCharCode(i);
+                val += String.fromCharCode(arr[i],16);
+                // val += arr[i].fromCharCode(16);
+            }
+            return val;
+        }
+
+        function stringToHex(str){
+            var val="";
+            for(var i = 0; i < str.length; i++){
+                if(val == ""){
+                    val = str.charCodeAt(i).toString(16);
+                }
+                else{
+                    val += "," + str.charCodeAt(i).toString(16);
+
+                }
+            }
+            return val;
+        }
+
+    function hexCharCodeToStr(hexCharCodeStr) {
+        var trimedStr = hexCharCodeStr.trim();
+        var rawStr = trimedStr.substr(0,2).toLowerCase() === "0x" ? trimedStr.substr(2) : trimedStr;
+        var len = rawStr.length;
+        if(len % 2 !== 0) {
+            alert("Illegal Format ASCII Code!");
+            return "";
+        }
+        var curCharCode;
+        var resultStr = [];
+        for(var i = 0; i < len;i = i + 2) {
+            curCharCode = parseInt(rawStr.substr(i, 2), 16); // ASCII Code Value
+            resultStr.push(String.fromCharCode(curCharCode));
+        }
+        return resultStr.join("");
+    }
+
+        // var t = "3038373434353732";
+        // var t = '0x33303132482D30380000000000'
+        var t = '0x4C59'
+        // console.log(hexToString(t));
+        // console.log(hexToString(t));
+        console.log(hexCharCodeToStr(t));   
+
+    </script>
+</body>
+</html>

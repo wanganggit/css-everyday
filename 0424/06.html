@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>版心</title>
+    <style>
+        .w1280 {
+            width: 1280px;
+            margin: 0 auto;
+
+        }
+        header {
+            height: 60px;
+            background-color: red;
+        }
+        nav {
+            height: 30px;
+            background-color: lime;
+        }
+        
+        aside {
+            float: left;
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+        }
+        article {
+            float: left;
+            width: 780px;
+            height: 500px;
+            background-color: yellow;
+        }
+        footer {
+            height: 100px;
+            background-color: #ccc;
+        }
+
+        .clear::after {
+            content: '';
+            clear: both;
+            display: block;
+            height: 0;
+            visibility: hidden;
+        }
+        .banner {
+            height: 340px;
+            background: url(images/big-banner.jpg) center no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <!-- 版心就是约束网页宽度一个值，网页的内容都是在这个版心里面，并且容器都是居中的 -->
+
+    <header class="w1280"></header>
+    <nav class="w1280">
+        
+    </nav>
+    <div class="banner">
+        <!-- <img src="images/big-banner.jpg" alt=""> -->
+    </div>
+    <section class="w1280 clear">
+        <aside></aside>
+        <article></article>
+    </section>
+    <footer class="w1280"></footer>
+</body>
+</html>

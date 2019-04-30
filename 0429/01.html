@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* line-height: 100px; */
+            position: relative;
+        }
+        .box1 {
+            height: 150px;
+            width: 120px;
+            background-color: blue;
+            position: absolute;
+            top: 0;
+            left: 120%;
+            display: none;
+        }
+        .box:hover .box1 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">你好</div>
+    </div>
+</body>
+</html>
