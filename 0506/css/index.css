@@ -1,0 +1,29 @@
+/* 头部区域 */
+.short-nav {
+    line-height: 32px;
+    background-color: #f1f1f1;
+}
+.short-nav .container {
+    
+}
+.short-nav .sn-l {
+    height: 32px;
+}
+.sn-r {
+    height: 32px;
+}
+.short-nav .sn-r li {
+    float: left;
+}
+.short-nav .sn-r li.line {
+    width: 1px;
+    height: 12px;
+    background-color: #666666;
+    margin-top: 10px;
+    margin: 10px 15px 0;
+}
+.short-nav .sn-r li span {
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
