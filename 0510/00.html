@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>对象</title>
+</head>
+<body>
+    <!-- 初始对象的基本概念 -->
+    <script>
+        // 创建对象有4种方式
+        // 单独创建对象   2种，字面量  构造函数object
+
+        // 批量创建对象   2种 工厂函数  自定义构造函数
+
+
+        // 字面量创建对象
+
+        var b = {}; // 字面量创建空对象
+
+        // 构造函数对象创建
+
+        // 工厂函数的创建
+
+        function creatPerson() {
+            // 1、创建一个新对象
+            var obj = {};
+
+            // 2、给新对象添加属性方法
+
+            obj.name = 'za';
+            obj.sayHi = function () {
+                console.log('nihao');
+                
+            }
+
+            // 3、返回值
+            return obj;
+        }
+
+        // 自定义构造函数创建
+
+        // new 做了几件事情 4件
+        function Hero(params,age) {
+            this.name = name;
+            this.age = age;
+            this.study = function () {
+                console.log(this.name + '是' + this.age);
+                
+            }
+        }
+        
+        // instanceof
+        // 判断 返回一个布尔值
+        // 结构： 对象 instanceof 构造函数
+        
+
+
+    </script>
+</body>
+</html>
