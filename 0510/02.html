@@ -7,6 +7,24 @@
     <title>math对象</title>
 </head>
 <body>
-    
+    <script>
+        // 格式化时间
+        // 格式：yyyy-MM-dd HH:mm:ss 
+        function getTime() {
+            var date = new Date();
+
+            // 2.获取具体的数据
+
+            var year = date.getFullYear();
+            var month = date.getMonth();
+            var day = date.getDate();
+
+            var hour = date.getHours();
+            var minute = date.getMinutes();
+            var second = date.getSeconds();
+
+            return year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second;
+        }
+    </script>
 </body>
 </html>

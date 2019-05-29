@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            margin: 100px auto 0;
+            /* border: 1px solid #000; */
+        }
+        table {
+            margin: 0px auto;
+            border-collapse: collapse;
+            border-spacing: 0px;
+        }
+        table, th, td 
+        {
+            padding: 5px;
+            border: 1px solid #000;
+        }
+        #btn {
+            /* display: block; */
+            /* margin: 0 auto; */
+            /* margin-left: -20px; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th><input type="checkbox"></th>
+                <th>姓名</th>
+                <th>学号</th>
+                <th>成绩</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>pingguo</td>
+                <td>455555</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>pingguo</td>
+                <td>455555</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>pingguo</td>
+                <td>455555</td>
+                <td>34</td>
+            </tr>
+        </table> 
+        <input type="button" id="btn" value="反选">
+    </div>
+    
+
+    <script>
+        // 需求：1、全选选中后下面的复选框都选中，否则都不选中 10.10.20.2
+
+        // 下面的每一个选中，或者不选中的时候，都应该判断一下，是否下面都选中了，如果都选中的话，全选也选中
+
+        // 取反状态
+
+        // 判断下面四个是否都选中，如果选中，如果没有选中
+        // 给下面的每一个复选框注册点击事件
+        // 每一个都要判断是否选中
+        // 判断四个是否都选中，如果选中选中全选框，如果没有选中，全选不选中
+        // 全部实现这个数据的进去
+        // 下面四个是否都选中，如果选中，全选选中，如果没有选中的，全选不选中
+        // 因为
+        // 点击反选按钮下面的复选框取反，取反之后判断复选框的状态，如果都选中，全选也选中，否则全选不选中。
+        
+        // 获取元素
+
+    </script>
+</body>
+</html>

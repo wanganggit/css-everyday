@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自定义标签属性</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+
+    <script>
+        var l = document.getElementsByTagName('li');
+        console.log(l);
+        
+        for (var i = 0; i < l.length; i++) {
+            l[i].onclick = fn;
+            if (i%2 === 0) {
+                l[i].style.backgroundColor = 'lime';
+                l[i].setAttribute('bgc', 'lime');
+            } else {
+                l[i].style.backgroundColor = 'red';
+                l[i].setAttribute('bgc', 'red');
+            }
+            
+        }
+
+        function fn() {
+            for (var i = 0; i < l.length; i++) {
+                l[i].style.backgroundColor = l[i].getAttribute('bgc');
+            }
+            this.style.backgroundColor = 'blue';
+        }
+
+
+    </script>
+</body>
+</html>

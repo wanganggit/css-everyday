@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+    <button id="but">切换图片</button>
+    <br>
+    <img src="images/a.jpg" alt="null" id="img">
+    <script>
+        // 需求：点击btn按钮，点击的时候切换图片
+        // 1.获取元素btn，img
+        var btn = document.getElementById('but');
+        var img = document.getElementById('img');
+        var n = true;
+        // 2.给btn按钮注册点击事件
+        btn.onclick = function () {
+            // 3.在事件处理函数中，修改img图片（修改img的src 属性）
+            
+            if (n) {
+                img.src = 'images/b.jpg';
+                n = false;
+            } else {
+                img.src = 'images/a.jpg';
+                n = true;
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
